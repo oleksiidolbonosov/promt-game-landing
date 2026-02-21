@@ -1,0 +1,76 @@
+﻿# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE/editor
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Builds
+dist/
+build/
+out/
+public/build/
+release/
+
+# Logs
+*.log
+*.log.*
+coverage/
+coverage.*.json
+nyc_output/
+*.rpt
+
+# Env
+.env
+.env.*.local
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+.eggs/
+*.whl
+pip-wheel-metadata/
+
+# Unity/game
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+MemoryCaptures/
+UserSettings/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.pidb
+*.booproj
+
+# Misc
+*.tmp
+*.cache
+*.bak
+*.orig
