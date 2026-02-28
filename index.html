@@ -9,13 +9,38 @@
   <meta property="og:description" content="Learn to think like AI. Can you guess the exact prompt behind the image?">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://promptlyss.com/">
+  <meta property="og:image" content="https://promptlyss.com/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Promptlyss">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://promptlyss.com/og-cover.jpg">
   <meta name="theme-color" content="#061845">
+  <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+  <link rel="canonical" href="https://promptlyss.com/">
   <link rel="icon" type="image/png" href="game-logo.png">
   <link rel="apple-touch-icon" href="game-logo.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" as="image" href="screen-game.webp" imagesrcset="screen-game.webp 1x, screen-game.png 1x">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Promptlyss",
+      "description": "Guess the exact AI prompt behind each image. A precision thinking puzzle game.",
+      "url": "https://promptlyss.com/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DOO Games Studio",
+        "url": "https://doogamesstudio.is-a.dev/"
+      },
+      "genre": ["Puzzle", "Casual", "Quiz"],
+      "operatingSystem": ["iOS", "Android"]
+    }
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -38,17 +63,29 @@
   <main>
     <section class="hero container">
       <div class="hero-copy">
-        <p class="eyebrow">The AI Interpretation Game</p>
-        <h1>Master the Art of AI Thinking</h1>
-        <p class="lead">Can you guess the exact prompt behind the image?</p>
+        <p class="eyebrow">The AI Prompt Guessing Game</p>
+        <h1>Can You Guess the Exact AI Prompt?</h1>
+        <p class="lead">Study the image, spot the clues, and pick the prompt that created it.</p>
+        <ul class="hero-metrics" aria-label="Key stats">
+          <li>🧠 7 Difficulty Tiers</li>
+          <li>🔥 Streaks &amp; Daily Challenge</li>
+          <li>💎 Unlock Packs with Coins</li>
+        </ul>
         <div class="cta-row">
-          <a class="store-btn store-btn--apple" href="https://apps.apple.com/" aria-label="Download on the App Store">Download on App Store</a>
-          <a class="store-btn store-btn--play" href="https://play.google.com/store" aria-label="Get it on Google Play">Get it on Google Play</a>
+          <a href="https://apps.apple.com/app/idYOURID?utm_source=landing&utm_medium=button&utm_campaign=promptlyss_launch" class="store-badge" aria-label="Download on the App Store">
+            <img src="badge-appstore.svg" alt="Download on the App Store" width="180" height="60" loading="eager">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE&utm_source=landing&utm_medium=button&utm_campaign=promptlyss_launch" class="store-badge" aria-label="Get it on Google Play">
+            <img src="badge-googleplay.png" alt="Get it on Google Play" width="200" height="60" loading="eager">
+          </a>
         </div>
       </div>
       <div class="phone-mockup" aria-label="Promptlyss gameplay preview">
         <div class="phone-mockup__screen">
-          <img class="phone-mockup__image" src="screen-game.png" alt="Promptlyss game screenshot">
+          <picture>
+            <source srcset="screen-game.webp" type="image/webp">
+            <img class="phone-mockup__image" src="screen-game.png" alt="Promptlyss game screenshot" width="1179" height="2556" loading="eager" fetchpriority="high">
+          </picture>
         </div>
       </div>
     </section>
@@ -77,12 +114,12 @@
     <section class="container section">
       <h2>Features</h2>
       <ul class="feature-list">
-        <li>3 difficulty tiers</li>
-        <li>Skill progression</li>
-        <li>Streak system</li>
-        <li>Pro Mode</li>
+        <li>7 difficulty tiers</li>
+        <li>Packs &amp; progression</li>
+        <li>Endless mode</li>
         <li>Daily challenge</li>
-        <li>Global leaderboard</li>
+        <li>Leaderboards</li>
+        <li>Pro stats</li>
       </ul>
     </section>
 
@@ -107,11 +144,26 @@
     <section class="container section" id="screenshots">
       <h2>Screenshots</h2>
       <div class="gallery">
-        <figure class="shot"><figcaption>Home</figcaption></figure>
-        <figure class="shot"><figcaption>Gameplay</figcaption></figure>
-        <figure class="shot"><figcaption>Level Up</figcaption></figure>
-        <figure class="shot"><figcaption>Packs</figcaption></figure>
-        <figure class="shot"><figcaption>Pro Stats</figcaption></figure>
+        <figure class="shot">
+          <img src="shots/home.webp" alt="Promptlyss home screen" loading="lazy" width="900" height="1600">
+          <figcaption>Home</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="shots/gameplay.webp" alt="Promptlyss gameplay screen" loading="lazy" width="900" height="1600">
+          <figcaption>Gameplay</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="shots/level-up.webp" alt="Promptlyss level up screen" loading="lazy" width="900" height="1600">
+          <figcaption>Level Up</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="shots/packs.webp" alt="Promptlyss packs screen" loading="lazy" width="900" height="1600">
+          <figcaption>Packs</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="shots/pro-stats.webp" alt="Promptlyss pro stats screen" loading="lazy" width="900" height="1600">
+          <figcaption>Pro Stats</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -130,14 +182,43 @@
 
     <section class="container section section--small" id="faq">
       <h2>FAQ</h2>
-      <div class="cards">
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Does Promptlyss need internet?</summary>
+          <p>Gameplay works offline, but leaderboards and restores require a connection.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Are there ads in the game?</summary>
+          <p>The core experience is free with optional in-app purchases and no forced ad interruptions during core gameplay.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is the content AI-generated?</summary>
+          <p>Promptlyss gameplay is AI-inspired and focused on recognition and reasoning challenges.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What data does Promptlyss collect?</summary>
+          <p>Only the minimum needed for app functionality, restores, and leaderboard features. Full details are in the Privacy Policy.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do packs work?</summary>
+          <p>You unlock packs with coins earned through play and progression milestones.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="container section section--small" aria-label="Support and contact">
+      <div class="cards cards-3">
         <article class="card">
-          <h3>Is Promptlyss free?</h3>
-          <p>Yes. The core experience is free with optional in-app purchases.</p>
+          <h3>Support</h3>
+          <p><a href="mailto:doogamesstudio@gmail.com">doogamesstudio@gmail.com</a></p>
         </article>
         <article class="card">
-          <h3>Where can I get updates?</h3>
-          <p>Major updates are announced in the stores.</p>
+          <h3>Press Kit</h3>
+          <p><a href="press/">Screens, logo, factsheet</a></p>
+        </article>
+        <article class="card">
+          <h3>Updates</h3>
+          <p>Follow store updates for new packs and features.</p>
         </article>
       </div>
     </section>
@@ -153,8 +234,8 @@
       <div class="footer-links">
         <a href="privacy/">Privacy Policy</a>
         <a href="terms/">Terms of Service</a>
-        <a href="mailto:support@promptlyss.com">Support Email</a>
-        <a href="mailto:contact@promptlyss.com">Contact</a>
+        <a href="mailto:doogamesstudio@gmail.com">Support Email</a>
+        <a href="mailto:doogamesstudio@gmail.com">Contact</a>
       </div>
     </div>
     <p class="copyright">&copy; <span id="year"></span> <a href="https://doogamesstudio.is-a.dev/" target="_blank" rel="noopener noreferrer">DOO Games Studio</a></p>
