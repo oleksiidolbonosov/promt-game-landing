@@ -330,7 +330,7 @@ h1 {
   isolation: isolate;
   overflow: hidden;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(190px, 245px);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
   align-items: center;
   gap: clamp(1.5rem, 5vw, 4rem);
   padding: clamp(1.25rem, 4vw, 3rem);
@@ -402,7 +402,7 @@ h1 {
 }
 
 .shorts-frame {
-  width: min(100%, 245px);
+  width: min(100%, 300px);
   aspect-ratio: 9 / 16;
   overflow: hidden;
   border: 1px solid rgba(138, 220, 255, 0.62);
@@ -690,7 +690,7 @@ h2 {
   }
 
   .shorts-frame {
-    width: min(100%, 210px);
+    width: min(100%, 260px);
     border-radius: 18px;
   }
 
