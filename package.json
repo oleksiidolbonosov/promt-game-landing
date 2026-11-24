@@ -1,0 +1,7 @@
+{
+  "name": "promptlyss-landing",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/generate-sitemap.mjs"
+  }
+}
